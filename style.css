@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 376px) {
+  .main-container {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 2em;
+  }
+}
+.main-container .left-section {
+  padding: 0 5em;
+}
+@media (max-width: 376px) {
+  .main-container .left-section {
+    padding: 0 1em;
+    margin: 0 auto;
+  }
+}
+.main-container .left-section .header {
+  font-weight: 700;
+  font-size: 3em;
+  padding: 0.2em 0em;
+  color: hsl(234, 29%, 20%);
+}
+@media (max-width: 376px) {
+  .main-container .left-section .header {
+    font-size: 2em;
+    padding: 0.4em 0em;
+  }
+}
+.main-container .left-section .sub_head {
+  padding: 1em 0em;
+  color: hsl(235, 18%, 26%);
+}
+@media (max-width: 376px) {
+  .main-container .left-section .sub_head {
+    padding: 0.5em 0;
+  }
+}
+.main-container .left-section .points {
+  color: hsl(235, 18%, 26%);
+}
+.main-container .left-section .points .item {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0;
+}
+.main-container .left-section .points .image-container {
+  padding: 0 0.5em 0 0;
+}
+.main-container .left-section .email-input {
+  padding: 1.5em 0em 1em;
+}
+.main-container .left-section .email-input p {
+  font-weight: 700;
+  font-size: small;
+  padding-bottom: 0.5em;
+}
+.main-container .left-section .email-input input {
+  padding: 1em;
+  border-radius: 0.5em;
+  border-style: none;
+  border: 1px solid hsl(235, 18%, 26%);
+  width: 100%;
+  color: hsl(235, 18%, 26%);
+}
+.main-container .right-section .image-container {
+  width: 100%;
+}
+.main-container .right-section .image-container #phone {
+  display: none;
+}
+@media (max-width: 376px) {
+  .main-container .right-section .image-container #phone {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .main-container .right-section .image-container #desktop {
+    display: none;
+  }
+}
+
+.button button {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  border-style: none;
+  cursor: pointer;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+}
+.button :hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.modal {
+  text-align: left;
+  width: 400px;
+  padding: 2.5em;
+  border: none;
+  border-radius: 1em;
+  margin: auto auto;
+}
+.modal .header {
+  font-weight: 700;
+  font-size: 2em;
+  padding: 0.4em 0;
+  color: hsl(234, 29%, 20%);
+}
+.modal .message {
+  padding: 1em 0;
+  margin-bottom: 1em;
+  line-height: 25px;
+}
+.modal .image-container {
+  height: 40px;
+}
+.modal .image-container img {
+  height: 100%;
+}
+
+.attribution {
+  padding-bottom: 1.5em;
+}
+@media (max-width: 376px) {
+  .attribution {
+    display: none;
+  }
+}
+
+.modal::backdrop {
+  background: hsl(234, 29%, 20%);
+}
+@media (max-width: 376px) {
+  .modal::backdrop {
+    background: white;
+  }
+}/*# sourceMappingURL=style.css.map */
